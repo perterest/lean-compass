@@ -1,0 +1,15 @@
+@mixin col-6 {
+	width: 50%;
+	font-size: 20px;
+}
+
+@mixin col ($width) {
+	width: $width;
+	font-size: 20px;
+}
+
+@mixin col-with-df ($width : 50%) {
+	width: $width;
+	font-size: 20px;
+}
+
