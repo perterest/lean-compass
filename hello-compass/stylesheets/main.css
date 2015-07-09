@@ -53,3 +53,12 @@ h1 {
   color: #E61010;
   font-size: 16px;
 }
+
+@media (min-width: 768px) {
+  /* line 57, ../sass/main.scss */
+  .main-column {
+    width: 60%;
+    font-size: 30px;
+    font-weight: bold;
+  }
+}

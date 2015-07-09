@@ -54,3 +54,8 @@ h1 {
 	@extend %alert;
 }
 
+.main-column {
+	//可以传递不带参数的数值
+	@include col-sm(60%);
+}
+

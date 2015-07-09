@@ -1,3 +1,5 @@
+@charset "utf-8";
+
 @mixin col-6 {
 	width: 50%;
 	font-size: 20px;
@@ -11,5 +13,28 @@
 @mixin col-with-df ($width : 50%) {
 	width: $width;
 	font-size: 20px;
+}
+
+@mixin col-sm ($width) {
+
+	// 判断参数是否是数值类型
+	@if type-of($width) != number {
+		@error "$width is not a number: #{$width}";
+	}
+	// 判断参数是否带偶单位，例如px, %等
+	@if not unitless($width) {
+		@if unit($width) != "%" {
+			@error "$width shoud be a percent value, such as 50%. #{$width}";
+		}
+	} @else {
+		@warn "$width need a proper unit. #{$width}";
+		$width: (percentage($width) / 100);
+	}
+
+	@media (min-width: 768px) {
+		width: $width;
+		font-size: 30px;
+		font-weight: bold;
+	}
 }
 
