@@ -1,0 +1,139 @@
+@charset "utf-8";
+
+/*! 
+ * 加!号可以强制压缩时不删除注释
+ * 
+ * 这里是注释
+ *
+ * 这里是版权信息
+ */
+
+@import "compass/reset";
+//@import "compass/reset/utilities";
+//@include global-reset;
+//http://compass-style.org/reference/compass/reset/utilities/
+.test-reset-box-model {
+	@include reset-box-model;
+}
+
+.test-nested-reset-content {
+	@include nested-reset;
+}
+
+
+//引入全部normalize模块
+//mport "normalize";
+
+//使用引入子模块的方式需要首先引入normalize-version模块
+@import "normalize-version";
+@import "normalize/base";
+@import "normalize/html5";
+
+.main {
+	font-size: 20px;
+}
+
+
+
+
+// 在末尾加入!可以强制再次引入
+//@import "compass/reset!";
+//
+//
+
+
+@import "compass/layout";
+
+//控制元素底部显示:默认是#root, #root_footer, #footer
+@include sticky-footer(50px, "#main", "#main-footer", "#footer");
+
+// 支持的浏览器类型
+// $supported-browsers: chrome;
+
+// 支持的浏览器版本
+// $browsers-minimum-versions: ("ie": "8");
+
+// css3模块会默认引入support模块
+@import "compass/css3";
+//@import "compass/support";
+.test-css3 {
+	@include box-shadow(1px 1px 3px 2px #f00);
+}
+
+
+.button {
+	@include appearance("button");
+}
+
+.test-inline-block {
+  @include inline-block();
+}
+
+.test-opacity {
+	@include opacity(.5);
+}
+
+@import "compass/typography";
+
+a {
+	// 为链接添加不同状态下的颜色
+	@include link-colors(#00c, #0cc, #fcc, #fcd, #fdd);
+}
+
+a.text {
+	//去掉超链接样式
+	@include unstyled-link();
+}
+
+.list-unstyled {
+	// 去掉所有的列表元素的格式
+	@include no-bullets();
+}
+
+.list-unstyled-li {
+	// 去掉单个li元素的格式
+	@include no-bullet();
+}
+
+.list-inline {
+	@include inline-list();
+}
+
+.list-horizontal {
+	@include horizontal-list(10px, right);
+	// 去掉padding
+	//@include horizontal-list(false);
+}
+
+.list-inline-block {
+	@include inline-block-list(5px);
+	// 不加padding值
+	// @include inline-block-list();
+}
+
+//开启firefox低版本对ellipsis的支持
+$use-mozilla-ellipsis-binding: true;
+.text-ellipsis {
+	@include ellipsis();
+}
+
+.text-hide {
+	// 隐藏文本text-indent
+	@include hide-text();
+}
+
+.test-squish-text {
+	// 隐藏文本
+	@include squish-text();
+}
+
+.text-replace-text {
+	// 用图片替换文本
+	@include replace-text("http://test.png");
+	// 用本第图片替换
+	//@include replace-text-with-dimensions("file://test.png");
+}
+
+//@debug browsers();
+
+

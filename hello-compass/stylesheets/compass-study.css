@@ -1,0 +1,385 @@
+@charset "UTF-8";
+/*! 
+ * 加!号可以强制压缩时不删除注释
+ * 
+ * 这里是注释
+ *
+ * 这里是版权信息
+ */
+/* line 5, D:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, D:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, D:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, D:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, D:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, D:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, D:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, D:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, D:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 15, ../sass/compass-study.scss */
+.test-reset-box-model {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* line 40, D:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+.test-nested-reset-content div, .test-nested-reset-content span, .test-nested-reset-content applet, .test-nested-reset-content object, .test-nested-reset-content iframe,
+.test-nested-reset-content h1, .test-nested-reset-content h2, .test-nested-reset-content h3, .test-nested-reset-content h4, .test-nested-reset-content h5, .test-nested-reset-content h6, .test-nested-reset-content p, .test-nested-reset-content blockquote, .test-nested-reset-content pre,
+.test-nested-reset-content a, .test-nested-reset-content abbr, .test-nested-reset-content acronym, .test-nested-reset-content address, .test-nested-reset-content big, .test-nested-reset-content cite, .test-nested-reset-content code,
+.test-nested-reset-content del, .test-nested-reset-content dfn, .test-nested-reset-content em, .test-nested-reset-content img, .test-nested-reset-content ins, .test-nested-reset-content kbd, .test-nested-reset-content q, .test-nested-reset-content s, .test-nested-reset-content samp,
+.test-nested-reset-content small, .test-nested-reset-content strike, .test-nested-reset-content strong, .test-nested-reset-content sub, .test-nested-reset-content sup, .test-nested-reset-content tt, .test-nested-reset-content var,
+.test-nested-reset-content b, .test-nested-reset-content u, .test-nested-reset-content i, .test-nested-reset-content center,
+.test-nested-reset-content dl, .test-nested-reset-content dt, .test-nested-reset-content dd, .test-nested-reset-content ol, .test-nested-reset-content ul, .test-nested-reset-content li,
+.test-nested-reset-content fieldset, .test-nested-reset-content form, .test-nested-reset-content label, .test-nested-reset-content legend,
+.test-nested-reset-content table, .test-nested-reset-content caption, .test-nested-reset-content tbody, .test-nested-reset-content tfoot, .test-nested-reset-content thead, .test-nested-reset-content tr, .test-nested-reset-content th, .test-nested-reset-content td,
+.test-nested-reset-content article, .test-nested-reset-content aside, .test-nested-reset-content canvas, .test-nested-reset-content details, .test-nested-reset-content embed,
+.test-nested-reset-content figure, .test-nested-reset-content figcaption, .test-nested-reset-content footer, .test-nested-reset-content header, .test-nested-reset-content hgroup,
+.test-nested-reset-content menu, .test-nested-reset-content nav, .test-nested-reset-content output, .test-nested-reset-content ruby, .test-nested-reset-content section, .test-nested-reset-content summary,
+.test-nested-reset-content time, .test-nested-reset-content mark, .test-nested-reset-content audio, .test-nested-reset-content video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+/* line 55, D:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+.test-nested-reset-content table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* line 57, D:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+.test-nested-reset-content caption, .test-nested-reset-content th, .test-nested-reset-content td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+/* line 59, D:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+.test-nested-reset-content q, .test-nested-reset-content blockquote {
+  quotes: none;
+}
+/* line 103, D:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+.test-nested-reset-content q:before, .test-nested-reset-content q:after, .test-nested-reset-content blockquote:before, .test-nested-reset-content blockquote:after {
+  content: "";
+  content: none;
+}
+/* line 61, D:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+.test-nested-reset-content a img {
+  border: none;
+}
+
+/*! normalize.css v3.0.0 | Base | MIT License | git.io/normalize */
+/* line 11, D:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-normalize-1.5/stylesheets/normalize/_base.scss */
+html {
+  font-family: sans-serif;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+/* line 19, D:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-normalize-1.5/stylesheets/normalize/_base.scss */
+body {
+  margin: 0;
+}
+
+/*! normalize.css v3.0.0 | HTML5 Display Definitions | MIT License | git.io/normalize */
+/* line 9, D:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-normalize-1.5/stylesheets/normalize/_html5.scss */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  display: block;
+}
+
+/* line 29, D:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-normalize-1.5/stylesheets/normalize/_html5.scss */
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  vertical-align: baseline;
+}
+
+/* line 40, D:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-normalize-1.5/stylesheets/normalize/_html5.scss */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/* line 47, D:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-normalize-1.5/stylesheets/normalize/_html5.scss */
+[hidden],
+template {
+  display: none;
+}
+
+/* line 32, ../sass/compass-study.scss */
+.main {
+  font-size: 20px;
+}
+
+/* line 10, D:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/layout/_sticky-footer.scss */
+html, body {
+  height: 100%;
+}
+
+/* line 12, D:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/layout/_sticky-footer.scss */
+#main {
+  clear: both;
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin-bottom: -50px;
+}
+/* line 18, D:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/layout/_sticky-footer.scss */
+#main #main-footer {
+  height: 50px;
+}
+
+/* line 20, D:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/layout/_sticky-footer.scss */
+#footer {
+  clear: both;
+  position: relative;
+  height: 50px;
+}
+
+/* line 59, ../sass/compass-study.scss */
+.test-css3 {
+  -moz-box-shadow: 1px 1px 3px 2px #f00;
+  -webkit-box-shadow: 1px 1px 3px 2px #f00;
+  box-shadow: 1px 1px 3px 2px #f00;
+}
+
+/* line 64, ../sass/compass-study.scss */
+.button {
+  -moz-appearance: button;
+  -webkit-appearance: button;
+}
+
+/* line 68, ../sass/compass-study.scss */
+.test-inline-block {
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+}
+
+/* line 72, ../sass/compass-study.scss */
+.test-opacity {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
+  opacity: 0.5;
+}
+
+/* line 78, ../sass/compass-study.scss */
+a {
+  color: #00c;
+}
+/* line 18, D:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/typography/links/_link-colors.scss */
+a:visited {
+  color: #fcd;
+}
+/* line 21, D:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/typography/links/_link-colors.scss */
+a:focus {
+  color: #fdd;
+}
+/* line 24, D:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/typography/links/_link-colors.scss */
+a:hover {
+  color: #0cc;
+}
+/* line 27, D:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/typography/links/_link-colors.scss */
+a:active {
+  color: #fcc;
+}
+
+/* line 83, ../sass/compass-study.scss */
+a.text {
+  color: inherit;
+  text-decoration: inherit;
+  cursor: inherit;
+}
+/* line 6, D:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/typography/links/_unstyled-link.scss */
+a.text:active, a.text:focus {
+  outline: none;
+}
+
+/* line 88, ../sass/compass-study.scss */
+.list-unstyled {
+  list-style: none;
+}
+/* line 11, D:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/typography/lists/_bullets.scss */
+.list-unstyled li {
+  list-style-image: none;
+  list-style-type: none;
+  margin-left: 0;
+}
+
+/* line 93, ../sass/compass-study.scss */
+.list-unstyled-li {
+  list-style-image: none;
+  list-style-type: none;
+  margin-left: 0;
+}
+
+/* line 98, ../sass/compass-study.scss */
+.list-inline {
+  list-style-type: none;
+}
+/* line 6, D:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/typography/lists/_inline-list.scss */
+.list-inline, .list-inline li {
+  margin: 0;
+  padding: 0;
+  display: inline;
+}
+
+/* line 102, ../sass/compass-study.scss */
+.list-horizontal {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  overflow: hidden;
+  *zoom: 1;
+}
+/* line 62, D:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/typography/lists/_horizontal-list.scss */
+.list-horizontal li {
+  list-style-image: none;
+  list-style-type: none;
+  margin-left: 0;
+  white-space: nowrap;
+  float: right;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+/* line 49, D:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/typography/lists/_horizontal-list.scss */
+.list-horizontal li:first-child {
+  padding-right: 0;
+}
+/* line 50, D:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/typography/lists/_horizontal-list.scss */
+.list-horizontal li:last-child {
+  padding-left: 0;
+}
+/* line 52, D:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/typography/lists/_horizontal-list.scss */
+.list-horizontal li.last {
+  padding-left: 0;
+}
+
+/* line 108, ../sass/compass-study.scss */
+.list-inline-block {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  overflow: hidden;
+  *zoom: 1;
+}
+/* line 49, D:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/typography/lists/_inline-block-list.scss */
+.list-inline-block li {
+  list-style-image: none;
+  list-style-type: none;
+  margin-left: 0;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  white-space: nowrap;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+/* line 116, ../sass/compass-study.scss */
+.text-ellipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  -ms-text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  -moz-binding: url('/stylesheets/xml/ellipsis.xml#ellipsis');
+}
+
+/* line 120, ../sass/compass-study.scss */
+.text-hide {
+  text-indent: -119988px;
+  overflow: hidden;
+  text-align: left;
+  text-transform: capitalize;
+}
+
+/* line 125, ../sass/compass-study.scss */
+.test-squish-text {
+  font: 0/0 serif;
+  text-shadow: none;
+  color: transparent;
+}
+
+/* line 130, ../sass/compass-study.scss */
+.text-replace-text {
+  text-indent: -119988px;
+  overflow: hidden;
+  text-align: left;
+  text-transform: capitalize;
+  background-image: url(http://test.png);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}

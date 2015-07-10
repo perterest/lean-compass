@@ -1,0 +1,9 @@
+compass七大模块
+reset, layout 需要主动引入
+css3, support, typography, helpers, utilities
+
+
+normalize.css
+安装compass-normalize插件
+包括8个模块
+base html5 links typography embeds groups forms tables

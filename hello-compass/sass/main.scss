@@ -57,5 +57,15 @@ h1 {
 .main-column {
 	//可以传递不带参数的数值
 	@include col-sm(60%);
+
+	// 控制@at-root内部的css选择器样式输出到最外层
+	@at-root {
+		.main-column-header {
+			font: {
+				family: $h-font-family;
+				size: 20px;
+			}
+		}
+	}
 }
 

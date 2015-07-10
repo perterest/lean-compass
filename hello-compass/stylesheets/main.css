@@ -62,3 +62,8 @@ h1 {
     font-weight: bold;
   }
 }
+/* line 63, ../sass/main.scss */
+.main-column-header {
+  font-family: Tahoma, "Hiragino Sans Gb", "Microsoft YaHei";
+  font-size: 20px;
+}
