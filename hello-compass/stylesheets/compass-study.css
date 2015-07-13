@@ -383,3 +383,20 @@ a.text:active, a.text:focus {
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
+
+/* line 142, ../sass/compass-study.scss */
+.test-text-force-wrap {
+  white-space: pre;
+  white-space: pre-wrap;
+  white-space: pre-line;
+  white-space: -pre-wrap;
+  white-space: -o-pre-wrap;
+  white-space: -moz-pre-wrap;
+  white-space: -hp-pre-wrap;
+  word-wrap: break-word;
+}
+
+/* line 146, ../sass/compass-study.scss */
+.test-white-space {
+  white-space: nowrap;
+}

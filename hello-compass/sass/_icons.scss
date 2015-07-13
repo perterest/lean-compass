@@ -1,0 +1,14 @@
+@charset "utf-8";
+
+@import "compass/utilities/sprites";
+
+@import "icons/*.png";
+//加宽度和高度
+$icons-sprite-dimensions: true;
+//是否支持-active, -focus
+$disable-magic-sprite-selectors: true;
+//合成的图片布局方式
+$icons-layout: horizontal;
+
+// mixin函数 {icons}是可变的，是图片的目录名
+@include all-icons-sprites();

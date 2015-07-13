@@ -86,7 +86,7 @@ a.text {
 }
 
 .list-unstyled {
-	// 去掉所有的列表元素的格式
+	// 去掉所有的列表元素的格式，用在ul上
 	@include no-bullets();
 }
 
@@ -137,3 +137,12 @@ $use-mozilla-ellipsis-binding: true;
 //@debug browsers();
 
 
+@import "compass/typography/text";
+
+.test-text-force-wrap {
+	@include force-wrap();
+}
+
+.test-white-space {
+	@include nowrap();
+}

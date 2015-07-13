@@ -1,0 +1,69 @@
+@charset "utf-8";
+
+//@import "compass/support";
+//
+$browser-minimum-versions: ("ie": "6");
+//$browser-minimum-versions: ("ie": null, "chrome": null);
+
+@import "compass/utilities/color";
+
+@debug brightness(#000);
+
+
+@import "compass/utilities/print";
+
+@include print-utilities(screen);
+
+
+
+@import "compass/utilities/tables";
+
+.goods-price {
+	$table-color: #7a98cc;
+
+	@include outer-table-borders();
+	@include inner-table-borders(1px, darken($table-color, 40%));
+
+	@include table-scaffolding();
+
+	@include alternating-rows-and-columns($table-color, adjust-hue($table-color, -120deg), #222222);
+}
+
+
+@import "compass/utilities/general";
+
+.clearfix-with-overflow {
+	//清除浮动overflow方式
+	@include clearfix();	
+}
+
+.clearfix-pie {
+	// 清除浮动 伪类 方式
+	@include pie-clearfix();
+}
+
+.clearfix-legacy {
+	// 清除浮动 伪类 方式
+	@include legacy-pie-clearfix();
+}
+
+.pull-left {
+	//float-left();
+	@include float(left);
+}
+
+// hack ie6,ie7
+.need-has-layout {
+	@include has-layout();
+}
+
+//A hack to supply IE6 (and below) with a different property value
+.underscore-hack-display {
+	@include underscore-hack(display, block, inline);
+}
+
+.tag-cloud-container {
+	@include tag-cloud(30px);
+}
+
+@import "icons";

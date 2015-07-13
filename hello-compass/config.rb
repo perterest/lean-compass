@@ -2,6 +2,11 @@ require 'compass/import-once/activate'
 require 'compass-normalize'
 # Require any additional compass plugins here.
 
+
+#set compass compile environment 
+#:development or :production
+environment = :development
+
 # Set this to the root of your project when deployed:
 http_path = "/"
 css_dir = "stylesheets"
@@ -9,11 +14,13 @@ sass_dir = "sass"
 images_dir = "images"
 javascripts_dir = "javascripts"
 
+fonts_dir = "fonts"
+
 # You can select your preferred output style here (can be overridden via the command line):
 # output_style = :expanded or :nested or :compact or :compressed
-output_style = :expanded
+output_style = (environment == :production) ? :compressed : :expanded
 
-# To enable relative paths to assets via compass helper functions. Uncomment:
+# To enable relative paths to assets via compass helper functions. Uncomment: （控制使用相对路径）
 # relative_assets = true
 
 # To disable debugging comments that display the original location of your selectors. Uncomment:
